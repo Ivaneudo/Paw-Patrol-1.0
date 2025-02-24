@@ -175,7 +175,28 @@ main {
     flex-direction: column;
 }
 
-/* Estilização do botões */
+/* TODO: Estilizando a pesquisa por cpf */
+.pesquisa {
+    display: flex;
+    position: relative;
+}
+
+.pesquisa img {
+    width: 20px;
+    height: 20px;
+    color: var(--Cinza);
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+.pesquisa input {
+    width: px;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+/* TODO: Estilização do botões */
 .buttons {
     height: 50px;
     display: flex;

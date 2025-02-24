@@ -23,7 +23,7 @@ body {
     height: 100vh;
 }
 
-/* Estilização da barra do entendente */
+/* TODO: Estilização da barra do entendente */
 .container .space {
     display: flex;
     justify-content: space-around;
@@ -56,7 +56,7 @@ body {
     margin-right: 1rem;
 }
 
-/* Estilização da navbar */
+/* TODO: Estilização da navbar */
 .navbar {
     display: flex;
     justify-content: center;

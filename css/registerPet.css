@@ -99,7 +99,7 @@ body {
     position: relative;
 }
 
-.temp .eclipse {
+.temp #eclipse1, #eclipse2, #eclipse3, #eclipse4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +112,7 @@ body {
     z-index: 2;
 }
 
-.eclipse .confirmed {
+.confirmed {
     background-color: var(--Verde);
 }
 
