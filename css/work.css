@@ -1,0 +1,85 @@
+:root {
+    --AzulCarinho: #E6F2FF;
+    --Verde: #4CAF50;
+    --Cinza: #6c6b6b;
+    --CinzaClarinho: #b7b4b4;
+    --Laranja: #FF9800;
+    --gradiente: linear-gradient(#CFE2F8, #5A799A)
+  }
+
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-image: var(--gradiente);
+    height: 100vh;
+}
+
+/* Estilização da barra do entendente */
+.container .space {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 2px;
+}  
+
+.space {
+    border-bottom: 1px solid black;
+}
+
+.space div {
+    display: flex;
+    width: 100vw;
+}
+
+.hi img {
+    width: 50px;
+    height: 50px;
+    margin-left: .5rem;
+}   
+
+.hi p {
+    margin-left: .5rem;
+}
+
+.exit {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+/* Estilização da navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 100vw;  
+    list-style: none; 
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: var(--Cinza);
+    transition: .3s;
+}
+
+.navbar ul a:hover {
+    color: #000;
+}
+
+.navbar ul li{
+    margin-right: 5rem;
+}

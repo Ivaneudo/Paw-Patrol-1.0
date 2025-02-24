@@ -1,0 +1,200 @@
+:root {
+    --AzulCarinho: #E6F2FF;
+    --Verde: #4CAF50;
+    --Cinza: #6c6b6b;
+    --CinzaClarinho: #b7b4b4;
+    --Laranja: #FF9800;
+    --gradiente: linear-gradient(#CFE2F8, #5A799A)
+  }
+
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-image: var(--gradiente);
+    height: 100vh;
+}
+
+/* TODO: Estilização da barra do entendente */
+.container .space {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 2px;
+}  
+
+.space {
+    border-bottom: 1px solid black;
+}
+
+.space div {
+    display: flex;
+    width: 100vw;
+}
+
+.hi img {
+    width: 50px;
+    height: 50px;
+    margin-left: .5rem;
+}   
+
+.hi p {
+    margin-left: .5rem;
+}
+
+.exit {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+/* TODO: Estilização da navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 100vw;  
+    list-style: none; 
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: var(--Cinza);
+    transition: .3s;
+}
+
+.navbar ul a:hover {
+    color: #000;
+}
+
+.navbar ul li{
+    margin-right: 5rem;
+}
+
+.navbar ul li .products {
+    color: #000;
+}
+
+
+/* TODO: Estilizando a linha do tempo */
+.temp {
+    height: 25px;
+    padding-top: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.temp .eclipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    border-radius: 6rem;
+    text-align: center; 
+    z-index: 2;
+}
+
+.eclipse .confirmed {
+    background-color: var(--Verde);
+}
+
+#line {
+    position: absolute;
+    background-color: transparent;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    top: 17px;
+    z-index: 1;
+}
+
+/* TODO: Estilização a main */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* TODO: Eslizando o form do pet */
+.clientPet {
+    background-color: #fff ;
+    width: 500px;
+    padding: 1rem;
+    position: relative;
+}
+
+.formPet{
+    /* display: grid;
+    grid-template-columns: 2; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.formPet input {
+    background-color: var(--input);
+    border: none;
+    margin-bottom: 5px;
+    height: 30px;   
+    width: 200px;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: var(--CinzaClarinho);
+    color: #000;
+    transition: .3s;
+}
+
+.quebra {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.buttons button {
+    height: 30px;   
+    width: 95px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: var(--CinzaClarinho);
+    color: #000;
+    border: none;
+    transition: .3s;
+    margin-top: 1rem;
+}
+
+.esquerda button {
+    width: 85;
+}
+
+.esquerda button img {
+    margin-left: -10px;
+}
+
+.direita button{
+    background-color: var(--Verde);
+    margin-right: .5rem;
+}

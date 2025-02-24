@@ -1,0 +1,216 @@
+:root {
+    --AzulCarinho: #E6F2FF;
+    --Verde: #4CAF50;
+    --Cinza: #6c6b6b;
+    --CinzaClarinho: #b7b4b4;
+    --Laranja: #FF9800;
+    --gradiente: linear-gradient(#CFE2F8, #5A799A)
+  }
+
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-image: var(--gradiente);
+    height: 100vh;
+}
+
+/* TODO: Estilização da barra do entendente */
+.container .space {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 2px;
+}  
+
+.space {
+    border-bottom: 1px solid black;
+}
+
+.space div {
+    display: flex;
+    width: 100vw;
+}
+
+.hi img {
+    width: 50px;
+    height: 50px;
+    margin-left: .5rem;
+}   
+
+.hi p {
+    margin-left: .5rem;
+}
+
+.exit {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+/* TODO: Estilização da navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 100vw;  
+    list-style: none; 
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: var(--Cinza);
+    transition: .3s;
+}
+
+.navbar ul a:hover {
+    color: #000;
+}
+
+.navbar ul li{
+    margin-right: 5rem;
+}
+
+.navbar ul li .products {
+    color: #000;
+}
+
+/* TODO: Estilização do fomulario do cliente */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client {
+    background-color: white;
+    width: 500px;
+    position: relative;
+}
+
+.temp {
+    height: 25px;
+    padding-top: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+#confirmed {
+    background-color: var(--Verde);
+}
+
+.temp span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    border-radius: 6rem;
+    text-align: center; 
+    z-index: 2;
+}
+
+#line {
+    position: absolute;
+    background-color: transparent;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    top: -8px;
+    z-index: 1;
+}
+
+.client p {
+    margin-left: 1rem;
+}
+
+.formClient {
+    margin-left: 15px;
+}
+
+.formClientFormat {
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.formClientFormat input {
+    background-color: var(--input);
+    border: none;
+    margin-bottom: 5px;
+    height: 30px;   
+    width: 200px;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: var(--CinzaClarinho);
+    color: #000;
+    transition: .3s;
+}
+
+.formClientFormat input:hover {
+    height: 32px;   
+    width: 202px;
+}
+
+.formClientFormat div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização do botões */
+.buttons {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons img {
+    height: 10px;
+    width: 10px ;
+}
+
+.buttons button {
+    height: 30px;   
+    width: 95px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: var(--CinzaClarinho);
+    color: #000;
+    border: none;
+    transition: .3s;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.esquerda button {
+    width: 85;
+}
+
+.esquerda button img {
+    margin-left: -10px;
+}
+
+.direita button{
+    background-color: var(--Verde);
+    margin-right: .5rem;
+}

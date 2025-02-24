@@ -1,0 +1,68 @@
+/* Variaveis */
+:root {
+    --input: #E5E8EB;
+    --AzulCarinho: #E6F2FF;     
+    --Verde: #4CAF50;
+    --Cinza: #6c6b6b;
+    --CinzaClarinho: #b7b4b4;
+    --Laranja: #FF9800;
+    --gradiente: linear-gradient(#CFE2F8, #5A799A)
+}
+
+/* Tamanho da logo */
+.logo img {
+    width: 200px;
+}
+
+/* Estilizando o formulário */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    background-color: var(--input);
+    border: none;
+    /* margin-bottom: 10px; */
+    height: 50px;   
+    width: 250px;
+    border-radius: 15px;
+    padding-left: 15px;
+    color: #000;
+    transition: .3s;
+}
+
+input:hover {
+    height: 52px;   
+    width: 252px;
+}
+
+.Enter {    
+    width: 150px;           
+    border-radius: 25px;
+    margin-top: .5rem;
+    font-size: 24px;
+    color: var(--CinzaClarinho);
+    background-color: var(--Cinza);
+    border: solid, 1px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* Mudando a cor do botão ao ter o mouse sobre ele  */
+.Enter:hover {
+    background-color: var(--Verde);
+    color: black;
+    width: 152px;
+  } 
