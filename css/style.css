@@ -1,21 +1,22 @@
-/* Resetando a formatação do navegador */
+/* TODO: Resetando a formatação do navegador */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Variaveis de cores */
+/* TODO: Variaveis */
 :root {
-    --AzulCarinho: #E6F2FF;
-    --Verde: #4CAF50;
+    --input: #E5E8EB;
+    --AzulCarinho: #E6F2FF;     
+    --Botões: #41b2da;
     --Cinza: #6c6b6b;
     --CinzaClarinho: #b7b4b4;
     --Laranja: #FF9800;
     --gradiente: linear-gradient(#CFE2F8, #5A799A)
-  }
+}
 
-/* Estilização geraldo container que imgloba todos os elementos */
+/* TODO: Estilização geraldo container que imgloba todos os elementos */
 .container {
     display: flex;
     flex-direction: column;
@@ -26,19 +27,19 @@ body {
     height: 100vh;
 }
 
-/* Determinando o tamanho da logo */
+/* TODO: Determinando o tamanho da logo */
 .logo img {
     width: 250px;
 }
 
-/* Definindo tamanho, e formatação do texto de boas vindas */
+/* TODO: Definindo tamanho, e formatação do texto de boas vindas */
 .BoasVindas h1 {
     font-size: 2rem;
     width: 600px;
     text-align: center;
 }
 
-/* Estilização do botão */
+/* TODO: Estilização do botão */
 #Enter {
     width: 200px;
     height: 80px;
@@ -50,7 +51,7 @@ body {
     border: solid, 1px;
     cursor: pointer;
 }
-/* Mudando a cor do botão ao ter o mousesobre ele  */
+/* TODO: Mudando a cor do botão ao ter o mousesobre ele  */
 #Enter:hover {
     background-color: var(--Verde);
     color: black;

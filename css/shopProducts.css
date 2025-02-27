@@ -15,7 +15,6 @@ body {
     overflow: hidden;
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
@@ -83,4 +82,82 @@ body {
 
 .navbar ul li{
     margin-right: 5rem;
+}
+
+.navbar ul li .products {
+    color: #000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TODO: Estilizando a pesquisa de produto */
+.pesquisar {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.camp {
+    position: relative;
+}
+
+.camp input {
+    background-color: var(--input);
+    border: none;
+    margin-bottom: 5px;
+    height: 30px;   
+    width: 170px;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: var(--CinzaClarinho);
+    color: #000;
+    transition: .3s;
+}
+
+.camp img {
+    position: absolute;
+    top: 8px;
+    left: 160px;
+}
+
+
+/* TODO: Estilizanod a tebela */
+.car {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.table {
+    height: 300px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.table th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid #000;
+    margin: -5rem;
+}
+
+.table td img {
+    width: 20px;
+    height: 20px;
+}
+
+tfoot {
+    margin-top: 2rem;
+}
+
+.final {
+    flex: 1;
 }

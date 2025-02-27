@@ -1,20 +1,20 @@
-/* Variaveis */
+/* TODO: Variaveis */
 :root {
     --input: #E5E8EB;
     --AzulCarinho: #E6F2FF;     
-    --Verde: #4CAF50;
+    --Botões: #41b2da;
     --Cinza: #6c6b6b;
     --CinzaClarinho: #b7b4b4;
     --Laranja: #FF9800;
     --gradiente: linear-gradient(#CFE2F8, #5A799A)
 }
 
-/* Tamanho da logo */
+/* TODO: Tamanho da logo */
 .logo img {
     width: 200px;
 }
 
-/* Estilizando o formulário */
+/* TODO: Estilizando o formulário */
 .form {
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ input:hover {
 
 /* Mudando a cor do botão ao ter o mouse sobre ele  */
 .Enter:hover {
-    background-color: var(--Verde);
+    background-color: var(--Botões);
     color: black;
     width: 152px;
   } 

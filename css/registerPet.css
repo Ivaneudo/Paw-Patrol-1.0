@@ -1,11 +1,13 @@
+/* TODO: Variaveis */
 :root {
-    --AzulCarinho: #E6F2FF;
-    --Verde: #4CAF50;
+    --input: #E5E8EB;
+    --AzulCarinho: #E6F2FF;     
+    --Botões: #41b2da;
     --Cinza: #6c6b6b;
     --CinzaClarinho: #b7b4b4;
     --Laranja: #FF9800;
     --gradiente: linear-gradient(#CFE2F8, #5A799A)
-  }
+}
 
 
 body {
@@ -179,7 +181,7 @@ main {
     cursor: pointer;
     border-radius: 10px;
     padding-left: 15px;
-    background-color: var(--CinzaClarinho);
+    background-color: var(--Cinza);
     color: #000;
     border: none;
     transition: .3s;
@@ -195,6 +197,6 @@ main {
 }
 
 .direita button{
-    background-color: var(--Verde);
+    background-color: var(--Botões);
     margin-right: .5rem;
 }
