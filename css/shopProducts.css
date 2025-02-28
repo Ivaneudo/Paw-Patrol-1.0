@@ -12,7 +12,7 @@
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
@@ -97,7 +97,7 @@ main {
 /* TODO: Estilizando a pesquisa de produto */
 .pesquisar {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .camp {
@@ -135,29 +135,70 @@ main {
 }
 
 .table {
-    height: 300px;
     border: 1px solid black;
     text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+    position: relative;
 }
 
-.table th {
+table {
+    padding: .5rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
     border: 1px solid black;
 }
 
-td {
-    border: 1px solid #000;
-    margin: -5rem;
-}
 
 .table td img {
     width: 20px;
     height: 20px;
 }
 
-tfoot {
+.final {
     margin-top: 2rem;
+    width: 100%;
+    text-align: start;
 }
 
-.final {
-    flex: 1;
+/* TODO: Estilizando os botões */
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.buttons button {
+    height: 30px;   
+    width: 95px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: var(--Cinza);
+    color: #000;
+    border: none;
+    transition: .3s;
+    margin-top: .5rem;
+}
+
+.esquerda button {
+    width: 85;
+}
+
+.esquerda button img {
+    margin-left: -10px; 
+}
+
+.buttons img {
+    width: 10px;
+}
+
+.direita button{
+    background-color: var(--Botões);
+    width: 100px;
+    margin-right: .5rem;
 }

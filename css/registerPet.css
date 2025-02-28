@@ -90,45 +90,6 @@ body {
     color: #000;
 }
 
-
-/* TODO: Estilizando a linha do tempo */
-.temp {
-    height: 25px;
-    padding-top: .3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-}
-
-.temp #eclipse1, #eclipse2, #eclipse3, #eclipse4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid black;
-    width: 25px;
-    height: 25px;
-    border-radius: 6rem;
-    text-align: center; 
-    z-index: 2;
-}
-
-.confirmed {
-    background-color: var(--Verde);
-}
-
-#line {
-    position: absolute;
-    background-color: transparent;
-    width: 400px;
-    border: none;
-    border-bottom: 1px solid black;
-    border-radius: 0;
-    top: 17px;
-    z-index: 1;
-}
-
 /* TODO: Estilização a main */
 main {
     display: flex;
@@ -169,6 +130,7 @@ main {
     flex-direction: column;
 }
 
+/* TODO: Estilizando os botões */
 .buttons{
     display: flex;
     justify-content: space-between;

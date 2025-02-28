@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>service</title>
+    <title>products</title>
         <!-- link para o icon -->
         <link rel="shortcut icon" href="img/Logo-Pethop-250px .ico" type="image/x-icon">
         <!-- css desta pagina -->
-        <link rel="stylesheet" href="css/service.css">
-        <!-- ! css da linha do tempo -->
-        <link rel="stylesheet" href="css/LineTemp.css">
+        <link rel="stylesheet" href="css/products.css">
 </head>
 <body>
     <div class="container">
@@ -27,7 +25,7 @@
         <section class="navbar">
             <ul>
                 <li>
-                    <a href="#">Cadastrar Cliente</a>
+                    <a href="registerClient.html">Cadastrar Cliente</a>
                 </li>
                 <li>
                     <a href="products.html" class="products">Produtos</a>
@@ -42,13 +40,25 @@
         </section>
         <main>
             <section class="client">
-                <p>Pets: </p>
+                <p>Cliente: </p>
                 <div class="formClient">
                     <form action="">
                         <div class="formClientFormat">
                             <div>
                                 <label
-                                for="cpf">CPF do dono:</label>
+                                for="name">Nome:</label>
+                                <input
+                                type="text"
+                                placeholder="Nome completo">
+                                <label
+                                for="email">E-mail:</label>
+                                <input
+                                type="email"
+                                placeholder="Digite o e-mail">
+                            </div>
+                            <div>
+                                <label
+                                for="cpf">CPF:</label>
                                 <div class="pesquisa">
                                     <input
                                     type="text"
@@ -56,27 +66,10 @@
                                     <img src="img/lupa.png" alt="">
                                 </div>
                                 <label
-                                for="name">Nome:</label>
+                                for="name">Telefone:</label>
                                 <input
                                 type="text"
-                                placeholder="Nome">
-                                <label
-                                for="cor">Cor</label></label>
-                                <input
-                                type="text"
-                                placeholder="Cor do pelo">
-                            </div>
-                            <div>
-                                <label
-                                for="idade">Idade:</label>
-                                <input
-                                type="text"
-                                placeholder="Ano/Mês">
-                                <label
-                                for="peso">Peso:</label>
-                                <input
-                                type="text"
-                                placeholder="Kg/G">
+                                placeholder="(85) 90000-0000">
                             </div>
                         </div>
                         <div class="buttons">
