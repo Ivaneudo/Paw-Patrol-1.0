@@ -1,0 +1,229 @@
+:root {
+    --input: #E5E8EB;
+    --AzulCarinho: #E6F2FF;     
+    --Botões: #41b2da;
+    --Verde: #4CAF50;
+    --Cinza: #6c6b6b;
+    --CinzaClarinho: #b7b4b4;
+    --Laranja: #FF9800;
+    --gradiente: linear-gradient(#CFE2F8, #5A799A)
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-image: var(--gradiente);
+    height: 100vh;
+}
+
+/* TODO: Estilização da barra do entendente */
+.container .space {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 2px;
+}  
+
+.space {
+    border-bottom: 1px solid black;
+}
+
+.space div {
+    display: flex;
+    width: 100vw;
+}
+
+.hi img {
+    width: 50px;
+    height: 50px;
+    margin-left: .5rem;
+}   
+
+.hi p {
+    margin-left: .5rem;
+}
+
+.exit {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+/* TODO: Estilização da navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 100vw;  
+    list-style: none; 
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: var(--Cinza);
+    transition: .3s;
+}
+
+.navbar ul a:hover {
+    color: #000;
+}
+
+.navbar ul li{
+    margin-right: 5rem;
+}
+
+/* TODO: Estilizando o campo do pagamento via cartão */
+.ContainerCartao {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.tipo {
+    background-color: var(--CinzaClarinho);
+    padding: 1rem;
+}
+
+.NavCard {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 40px;
+    border-bottom: 1px solid black;
+}
+
+.NavCard a {
+    text-decoration: none;
+    color: #6c6b6b;
+}
+
+.NavCard a:hover {
+    color: #000;
+}
+
+/* TODO: Estilzando os input */
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+label {
+    font-size: .8rem;
+    color: var(--Cinza);
+}
+
+#tipo {
+    font-size: 1rem;
+    color: black;
+}
+
+/* TODO: Estilizando a escolha da bandeira do cartão. */
+.PrimLin {
+    display: flex;
+    margin-top: .5rem;
+    gap: 1rem;
+}
+
+.bandeira {
+    display: flex;
+    flex-direction: column;
+}
+
+.bandeira select {
+    border: none;
+    width: 150px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+
+/* TODO: Estilizando o valor que o cliente deve pagar. */
+.valor {
+    display: flex;
+    flex-direction: column;
+}
+
+.valor input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+/* TODO: Estilizando as vezes que o cliente pode parcelar a compra */
+.vezes {
+    display: flex;
+    flex-direction: column;
+}
+
+/* TODO: Estilizando a legunda linha */
+.SecundLin {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.autorizacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.DigitorCard {
+    display: flex;
+    flex-direction: column;
+}
+
+/* TODO: Estilização do botões */
+.buttons {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.buttons img {
+    height: 10px;
+    width: 10px ;
+}
+
+.buttons button {
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: var(--CinzaClarinho);
+    color: #000;
+    border: none;
+    transition: .3s;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.esquerda button {
+    width: 85;
+}
+
+.esquerda button img {
+    margin-left: -10px;
+}
+
+.direita button{
+    background-color: var(--Botões);
+    margin-right: .5rem;
+}
