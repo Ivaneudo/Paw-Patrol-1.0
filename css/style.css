@@ -53,7 +53,7 @@ body {
 }
 /* TODO: Mudando a cor do botão ao ter o mousesobre ele  */
 #Enter:hover {
-    background-color: var(--Verde);
+    background-color: var(--Botões);
     color: black;
 } 
 
