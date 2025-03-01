@@ -1,0 +1,162 @@
+:root {
+    --input: #E5E8EB;
+    --AzulCarinho: #E6F2FF;     
+    --Botões: #41b2da;
+    --Verde: #4CAF50;
+    --Cinza: #6c6b6b;
+    --CinzaClarinho: #cecece;
+    --Laranja: #FF9800;
+    --gradiente: linear-gradient(#CFE2F8, #5A799A);
+    --gradiente2: linear-gradient(150deg, #e5dcdc, #d2caca);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-image: var(--gradiente);
+    height: 100vh;
+}
+
+/* TODO: Estilização da barra do entendente */
+.container .space {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 2px;
+}  
+
+.space {
+    border-bottom: 1px solid black;
+}
+
+.space div {
+    display: flex;
+    width: 100vw;
+}
+
+.hi img {
+    width: 50px;
+    height: 50px;
+    margin-left: .5rem;
+}   
+
+.hi p {
+    margin-left: .5rem;
+}
+
+.exit {
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+/* TODO: Estilização da navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 100vw;  
+    list-style: none; 
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: var(--Cinza);
+    transition: .3s;
+}
+
+.navbar ul a:hover {
+    color: #000;
+}
+
+.navbar ul li{
+    margin-right: 5rem;
+}
+
+#cartao {
+    color: #000;
+}
+
+/* TODO: Estilizando a tabela das vendas. */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab {
+    background-color: #fff;
+    width: 450px;
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.table {
+    border: 1px solid #000;
+    margin-top: 1rem;
+    height: 250px;
+    padding: .5rem;
+}
+
+th, td {
+    border: 1px solid #000;
+}
+
+/* TODO: Estilizando a pesquisa por cpf */
+.pesquisa {
+    display: flex;
+    position: relative;
+    width: 200px;
+}
+
+.pesquisa input {
+    background-color: var(--input);
+    border: none;
+    margin-bottom: 5px;
+    height: 30px;   
+    width: 200px;
+    border-radius: 10px;
+    padding-left: 15px;
+    background-color: var(--CinzaClarinho);
+    color: #000;
+    transition: .3s;
+}
+
+.pesquisa input:hover {
+    height: 32px;   
+    width: 202px;
+}
+
+.pesquisa img {
+    width: 20px;
+    height: 20px;
+    color: var(--Cinza);
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+.pesquisa input {
+    width: px;
+    margin-bottom: 0;
+    border-radius: 10px;
+}

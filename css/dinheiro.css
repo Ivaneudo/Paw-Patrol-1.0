@@ -1,19 +1,20 @@
-/* TODO: Variaveis */
 :root {
     --input: #E5E8EB;
     --AzulCarinho: #E6F2FF;     
     --Botões: #41b2da;
+    --Verde: #4CAF50;
     --Cinza: #6c6b6b;
-    --CinzaClarinho: #b7b4b4;
+    --CinzaClarinho: #cecece;
     --Laranja: #FF9800;
-    --gradiente: linear-gradient(#CFE2F8, #5A799A)
+    --gradiente: linear-gradient(#CFE2F8, #5A799A);
+    --gradiente2: linear-gradient(150deg, #e5dcdc, #d2caca);
 }
-
 
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -86,116 +87,74 @@ body {
     margin-right: 5rem;
 }
 
-.navbar ul li .products {
+#cartao {
     color: #000;
 }
 
-/* TODO: Estilização do fomulario do cliente */
-main {
+/* TODO: Estilizando o campo do pagamento por dinheiro */
+.ContainerCartao {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-self: center;
+    padding: 1rem;
 }
 
-.client {
-    background-color: white;
-    width: 500px;
-    position: relative;
+.tipo {
+    padding: 1rem;
 }
 
-/* TODO: Estilizando a linha do tempo.
-.temp {
-    height: 25px;
-    padding-top: .3rem;
+.NavCard {
     display: flex;
+    gap: 1rem;
     align-items: center;
-    justify-content: space-around;
-    position: relative;
+    height: 40px;
+    border-bottom: 1px solid black;
 }
 
-.temp span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid black;
-    width: 25px;
-    height: 25px;
-    border-radius: 6rem;
-    text-align: center; 
-    z-index: 2;
+.NavCard a {
+    text-decoration: none;
+    color: #6c6b6b;
 }
 
-#confirmed1 {
-    background-color: var(--Verde);
+.NavCard a:hover {
+    color: #000;
 }
 
-#line {
-    position: absolute;
+/* TODO: Estilzando os input */
+input {
     background-color: transparent;
-    width: 400px;
     border: none;
     border-bottom: 1px solid black;
-    border-radius: 0;
-    top: -8px;
-    z-index: 1;
-} */
-
-.client p {
-    margin-left: 1rem;
 }
 
-.formClient {
-    margin-left: 15px;
+label {
+    font-size: .8rem;
+    color: var(--Cinza);
 }
 
-.formClientFormat {
-    display: flex;
-    margin-right: 20px;
-    justify-content: space-between;
-}
-
-.formClientFormat input {
-    background-color: var(--input);
-    border: none;
-    margin-bottom: 5px;
-    height: 30px;   
-    width: 200px;
-    border-radius: 10px;
-    padding-left: 15px;
-    background-color: var(--CinzaClarinho);
+#tipo {
+    font-size: 1rem;
     color: #000;
-    transition: .3s;
 }
 
-.formClientFormat input:hover {
-    height: 32px;   
-    width: 202px;
+/* TODO: Estilizando a primeria linha. */
+.PrimLin {
+    display: flex;
+    margin-top: .5rem;
+    gap: 1rem;
 }
 
-.formClientFormat div {
+/* TODO: Estilizando o valor que o cliente deve pagar. */
+.quebra {
     display: flex;
     flex-direction: column;
 }
 
-/* TODO: Estilizando a pesquisa por cpf */
-.pesquisa {
+/* TODO: Estilizando as vezes que o cliente pode parcelar a compra */
+.vezes {
     display: flex;
-    position: relative;
-}
-
-.pesquisa img {
-    width: 20px;
-    height: 20px;
-    color: var(--Cinza);
-    position: absolute;
-    top: 7px;
-    right: 15px;
-}
-
-.pesquisa input {
-    margin-bottom: 0;
-    border-radius: 10px;
+    flex-direction: column;
 }
 
 /* TODO: Estilização do botões */
@@ -204,6 +163,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .buttons img {
@@ -212,8 +172,7 @@ main {
 }
 
 .buttons button {
-    height: 30px;   
-    width: 95px;
+    padding: .5rem;
     cursor: pointer;
     border-radius: 10px;
     padding-left: 15px;

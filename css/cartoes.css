@@ -4,9 +4,10 @@
     --Botões: #41b2da;
     --Verde: #4CAF50;
     --Cinza: #6c6b6b;
-    --CinzaClarinho: #b7b4b4;
+    --CinzaClarinho: #cecece;
     --Laranja: #FF9800;
-    --gradiente: linear-gradient(#CFE2F8, #5A799A)
+    --gradiente: linear-gradient(#CFE2F8, #5A799A);
+    --gradiente2: linear-gradient(150deg, #e5dcdc, #d2caca);
 }
 
 body {
@@ -86,6 +87,10 @@ body {
     margin-right: 5rem;
 }
 
+#cartao {
+    color: #000;
+}
+
 /* TODO: Estilizando o campo do pagamento via cartão */
 .ContainerCartao {
     background-color: #fff;
@@ -96,7 +101,6 @@ body {
 }
 
 .tipo {
-    background-color: var(--CinzaClarinho);
     padding: 1rem;
 }
 
@@ -131,7 +135,7 @@ label {
 
 #tipo {
     font-size: 1rem;
-    color: black;
+    color: #000;
 }
 
 /* TODO: Estilizando a escolha da bandeira do cartão. */
@@ -149,7 +153,7 @@ label {
 .bandeira select {
     border: none;
     width: 150px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
     background-color: transparent;
 }
 
