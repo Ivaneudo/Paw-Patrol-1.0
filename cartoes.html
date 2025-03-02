@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paw Patrol</title>
-    <!-- link para o icon -->
-    <link rel="shortcut icon" href="img/Logo-Pethop-250px .ico" type="image/x-icon">
-    <!-- css das cores -->
-    <link rel="stylesheet" href="css/colorVar.css">
-    <!-- css desta pagina -->
-    <link rel="stylesheet" href="css/cartoes.css">
+    <title>products</title>
+        <!-- link para o icon -->
+        <link rel="shortcut icon" href="img/Logo-Pethop-250px .ico" type="image/x-icon">
+        <!-- css desta pagina -->
+        <link rel="stylesheet" href="css/products.css">
 </head>
 <body>
     <div class="container">
@@ -27,10 +25,10 @@
         <section class="navbar">
             <ul>
                 <li>
-                    <a href="registerClient.html">Cadastrar Cliente</a>
+                    <a href="registerClient.html" class="products">Cadastrar Cliente</a>
                 </li>
                 <li>
-                    <a href="products.html" class="products">Produtos</a>
+                    <a href="products.html">Produtos</a>
                 </li>
                 <li>
                     <a href="service.html" >Serviços</a>
@@ -41,69 +39,60 @@
             </ul>
         </section>
         <main>
-            <div class="ContainerCartao">
-                <div class="tipo">
-                    <div class="NavCard">
-                        <p><a href="cartoes.html" id="cartao">Cartão</a></p>
-                        <p><a href="dinherio.html">Dinheiro</a></p>
-                    </div>
+            <section class="client">
+                <p>Cliente: </p>
+                <div class="formClient">
                     <form action="">
-                        <div class="CredBeb">
-                            <label for="Tipo" id="tipo">Tipo: </label>
-                            <input type="radio" name="credito" id="credito">
-                            <label for="credito">Credito</label>
-                            <input type="radio" name="debito" id="debito">
-                            <label for="debito">Debito</label>
+                        <div class="formClientFormat">
+                            <div>
+                                <label
+                                for="name">Nome:</label>
+                                <input
+                                type="text"
+                                placeholder="Nome completo">
+                                <label
+                                for="email">E-mail:</label>
+                                <input
+                                type="email"
+                                placeholder="Digite o e-mail">
+                            </div>
+                            <div>
+                                <label
+                                for="cpf">CPF:</label>
+                                <div class="pesquisa">
+                                    <input
+                                    type="text"
+                                    placeholder="000.000.000-00" id="cpf" maxlength="14">
+                                    <img src="img/lupa.png" alt="">
+                                </div>
+                                <label
+                                for="name">Telefone:</label>
+                                <input
+                                type="text"
+                                placeholder="(85) 90000-0000">
+                            </div>
                         </div>
-                        <div class="PrimLin">
-                            <div class="bandeira">
-                                <label for="bandeira do cartão">Bandeira do Cartão</label>
-                                <select >
-                                    <option value="">Bandeira do Cartão</option>
-                                    <option value="Mastercard">Mastercard</option>
-                                    <option value="Visa">Visa</option>
-                                    <option value="Elo">Elo</option>
-                                    <option value="AmericanExpress">American Express</option>
-                                    <option value="Hipercard">Hipercard</option>
-                                </select>
+                        <div class="buttons">
+                            <div class="esquerda">
+                                <button>
+                                    <img src="img/seta-esquerda.png" alt="">
+                                    Voltar
+                                </button>
                             </div>
-                            <div class="valor">
-                                <label for="Valor">Valor</label>
-                                <input type="text" placeholder="R$: ">
-                            </div>
-                            <div class="vezes">
-                                <label for="vezes">Vezes: </label>
-                                <input type="text" placeholder="1">
-                            </div>
-                        </div>
-                        <div class="SecundLin">
-                            <div class="autorizacao">
-                                <label for="autorização">Autorização</label>
-                                <input type="text">
-                            </div>
-                            <div class="DigitorCard">
-                                <label for="digitor do cartão">4 ultimos digitos do cartão</label>
-                                <input type="text">
+                            <div class="direita">
+                                <button>Cadastrar</button>
+                                <button>
+                                    Avançar
+                                    <img src="img/seta-direita.png" alt="">
+                                </button>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="buttons">
-                    <div class="esquerda">
-                        <button>
-                            <img src="img/seta-esquerda.png" alt="">
-                            Voltar
-                        </button>
-                        <button>Cancelar Compra</button>
-                    </div>
-                    <div class="direita">
-                        <button>
-                            Finalizar
-                        </button>
-                    </div>
-                </div>
-            </div>
+            </section>
         </main>
     </div>
+
+    <script src="js/cliente.js"></script>
 </body>
 </html>
