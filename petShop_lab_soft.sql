@@ -47,7 +47,8 @@ CREATE TABLE produto(
 	id_produto INT NOT NULL,
 	nome_produto VARCHAR(150),
 	estoque INT,
-	preco DECIMAL (10, 2) NOT NULL DEFAULT 0.00
+	preco DECIMAL (10, 2) NOT NULL DEFAULT 0.00,
+	tamanho ENUM('P', 'M', 'G', 'GG')
 );
 
 CREATE TABLE vendas(
