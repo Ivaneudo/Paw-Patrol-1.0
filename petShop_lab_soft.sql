@@ -3,8 +3,8 @@ USE petShop;
 
 CREATE TABLE admnistrador(
 	nome VARCHAR(100),
-	cpf CHAR(11) NOT NULL UNIQUE,
-	telefone CHAR(10), 
+	cpf CHAR(14) NOT NULL UNIQUE,
+	telefone CHAR(14), 
 	email VARCHAR(100) UNIQUE,
 	senha VARCHAR(50) NOT NULL
 );
@@ -12,24 +12,24 @@ CREATE TABLE admnistrador(
 CREATE TABLE cliente (
 	id_cliente INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(100),
-	cpf CHAR(11) NOT NULL UNIQUE,
-	telefone CHAR(10),
+	cpf CHAR(14) NOT NULL UNIQUE,
+	telefone CHAR(14),
 	email VARCHAR(100) UNIQUE,
 	senha VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE supervisor(
 	nome VARCHAR(100),
-	cpf CHAR(11) NOT NULL UNIQUE,
-	telefone CHAR(10),
+	cpf CHAR(14) NOT NULL UNIQUE,
+	telefone CHAR(14),
 	email VARCHAR(100) UNIQUE,
 	senha VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE repositor(
 	nome VARCHAR(100),
-	cpf CHAR(11) NOT NULL UNIQUE,
-	telefone CHAR(10),
+	cpf CHAR(14) NOT NULL UNIQUE,
+	telefone CHAR(14),
 	email VARCHAR(100) UNIQUE,
 	senha VARCHAR(50) NOT NULL
 );
@@ -37,8 +37,8 @@ CREATE TABLE repositor(
 CREATE TABLE caixa(
 	caixa_id INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(100),
-	cpf CHAR(11) NOT NULL UNIQUE,
-	telefone CHAR(10),
+	cpf CHAR(14) NOT NULL UNIQUE,
+	telefone CHAR(14),
 	email VARCHAR(100) UNIQUE,
 	senha VARCHAR(50) NOT NULL
 );
@@ -65,7 +65,7 @@ CREATE TABLE pet(
 	cor VARCHAR(50),
 	idade INT,
 	especie ENUM('gato, cachorro') NOT NULL,
-	cpf_dono CHAR(11),
+	cpf_dono CHAR(14),
 	FOREIGN KEY (cpf_dono) REFERENCES cliente(cpf)
 );
 
