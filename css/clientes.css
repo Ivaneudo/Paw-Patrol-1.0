@@ -1,15 +1,15 @@
 :root {
-    --input: #E5E8EB;
+    --input: hsla(210, 13%, 91%, 0.784);
     --AzulCarinho: #E6F2FF;     
     --Botões: #41b2da;
     --Verde: #4CAF50;
     --Cinza: #6c6b6b;
-    --CinzaClarinho: #cecece;
+    --CinzaClarinho: #b7b4b4;
     --Laranja: #FF9800;
     --LinksHover: #40005C;
-    --gradiente: linear-gradient(#CFE2F8, #5A799A);
-    --gradiente2: linear-gradient(150deg, #e5dcdc, #d2caca);
+    --gradiente: linear-gradient(#CFE2F8, #5A799A)
 }
+
 
 body {
     padding: 0;
@@ -88,76 +88,96 @@ body {
     margin-right: 5rem;
 }
 
-#cartao {
-    color: var(--LinksHoverd);
+.navbar ul li .products {
+    color: var(--LinksHover);
 }
 
-/* TODO: Estilizando a tabela das vendas. */
+/* TODO: Estilização do fomulario do cliente */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.tab {
-    background-color: #fff;
-    width: 450px;
-    padding: 1rem;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+/* TODO: Estilizando a pesquisa de produto */
+.pesquisar {
     width: 100%;
+    margin-bottom: .5rem;
 }
 
-.table {
-    border: 1px solid #000;
-    margin-top: 1rem;
-    height: 250px;
-    padding: .5rem;
-}
-
-th, td {
-    border: 1px solid #000;
-}
-
-/* TODO: Estilizando a pesquisa por cpf */
-.pesquisa {
-    display: flex;
+.camp {
     position: relative;
-    width: 200px;
 }
 
-.pesquisa input {
+.camp input {
     background-color: var(--input);
     border: none;
     margin-bottom: 5px;
     height: 30px;   
-    width: 200px;
+    width: 170px;
     border-radius: 10px;
     padding-left: 15px;
-    background-color: var(--CinzaClarinho);
     color: #000;
     transition: .3s;
 }
 
-.pesquisa input:hover {
-    height: 32px;   
-    width: 202px;
+.camp img {
+    position: absolute;
+    top: 8px;
+    left: 160px;
 }
 
-.pesquisa img {
+
+/* TODO: Estilizanod a tebela */
+.car {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.table {
+    border: 1px solid black;
+    text-align: start;
+    font-size: 1.3rem;
+    padding: 1rem ;
+    position: relative;
+}
+
+table {
+    padding: .5rem;
+    width: 450px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.cabecalho {
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+.table td img {
     width: 20px;
     height: 20px;
-    color: var(--Cinza);
-    position: absolute;
-    top: 7px;
-    right: 15px;
 }
 
-.pesquisa input {
-    width: px;
-    margin-bottom: 0;
-    border-radius: 10px;
+.name {
+    padding-left: .5rem;
+}
+
+.cpf {
+    text-align: center;
+    padding: 0 .5rem ;
+}
+
+.excluir {
+    align-items: center;
+    text-align: center;
+    padding: .3rem;
 }

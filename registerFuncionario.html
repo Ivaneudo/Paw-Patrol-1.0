@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+        <!-- link para o icon -->
+        <link rel="shortcut icon" href="img/Logo-Pethop-250px .ico" type="image/x-icon">
+        <!-- css desta pagina -->
+        <link rel="stylesheet" href="css/registarFuncionario.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="space">
+                <div class="hi">
+                    <img src="img/Logo-Pethop-250px.png" alt="">
+                    <p>Olá <span>Ivaneudo</span> é um prazer ter você aqui!</p>
+                </div>
+                <div class="exit">
+                    <p>sair</p>
+                </div>
+            </div>
+        </header>
+        <section class="navbar">
+
+            <ul>
+                <li>
+                    <a href="registerFuncionario.html" class="products">Cadastrar Funcionário</a>
+                </li>
+                <li>
+                    <a href="funcionarios.html">Funcionários</a>
+                </li>
+                <li>
+                    <a href="clientes.html">Cliente</a>
+                </li>
+            </ul>
+
+        </section>
+        <main>
+            <section class="client">
+                <div class="formClient">
+                    <form action="">
+                        
+                        <!-- TODO: Tipo de funcionário -->
+                        <div class="tipo">
+                            <label for="tipo">Tipo:</label>
+                            <input type="checkbox"> 
+                            <label for="Caixa">Caixa</label>
+                            <input type="checkbox"> 
+                            <label for="Caixa">Estoquista</label>
+                            <input type="checkbox"> 
+                            <label for="Caixa">Administrador</label>
+                        </div>
+
+                        <div class="formClientFormat">
+                            <div>
+                                <label
+                                for="name">Nome:</label>
+                                <input
+                                type="text"
+                                placeholder="Nome completo">
+                                <label
+                                for="email">E-mail:</label>
+                                <input
+                                type="email"
+                                placeholder="Digite o e-mail">
+                            </div>
+                            <div>
+                                <label
+                                for="cpf">CPF:</label>
+                                <div class="pesquisa">
+                                    <input
+                                    type="text"
+                                    placeholder="000.000.000-00" id="cpf" maxlength="14">
+                                    <img src="img/lupa.png" alt="">
+                                </div>
+                                <label
+                                for="name" id="telefone">Telefone:</label>
+                                <input
+                                type="text"
+                                placeholder="(85) 90000-0000">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="esquerda">
+                                <button>
+                                    <img src="img/seta-esquerda.png" alt="">
+                                    Voltar
+                                </button>
+                            </div>
+                            <div class="direita">
+                                <button>Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/cliente.js"></script>
+</body>
+</html>

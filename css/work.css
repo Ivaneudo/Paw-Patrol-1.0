@@ -6,6 +6,7 @@
     --Cinza: #6c6b6b;
     --CinzaClarinho: #b7b4b4;
     --Laranja: #FF9800;
+    --LinksHover: #40005C;
     --gradiente: linear-gradient(#CFE2F8, #5A799A)
 }
 
@@ -78,7 +79,7 @@ body {
 }
 
 .navbar ul a:hover {
-    color: #000;
+    color: var(--LinksHover);
 }
 
 .navbar ul li{

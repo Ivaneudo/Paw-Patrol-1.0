@@ -6,6 +6,7 @@
     --Cinza: #6c6b6b;
     --CinzaClarinho: #cecece;
     --Laranja: #FF9800;
+    --LinksHover: #40005C;
     --gradiente: linear-gradient(#CFE2F8, #5A799A);
     --gradiente2: linear-gradient(150deg, #e5dcdc, #d2caca);
 }
@@ -80,7 +81,7 @@ body {
 }
 
 .navbar ul a:hover {
-    color: #000;
+    color: var(--LinksHover);
 }
 
 .navbar ul li{
@@ -88,7 +89,7 @@ body {
 }
 
 #cartao {
-    color: #000;
+    color: var(--LinksHover);
 }
 
 /* TODO: Estilizando o campo do pagamento via cartão */
