@@ -14,7 +14,7 @@
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -99,115 +99,62 @@ main {
     align-items: center;
 }
 
-.client {
-    background-color: #fff;
+/* TODO: Estilizando a pesquisa de produto */
+.pesquisar {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.camp {
     position: relative;
-    border-radius: .5rem;
+    
 }
 
-.tipo {
-    margin: 1rem 0 1rem 0;
-}
-
-.formClient {
-    margin-left: 15px;
-}
-
-.formClientFormat {
-    display: flex;
-    margin-right: 20px;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-#telefone {
-    margin-top: .4rem;
-}
-
-.formClientFormat input {
+.camp input {
+    background-color: var(--input);
     border: none;
     margin-bottom: 5px;
     height: 30px;   
-    width: 150px;
+    width: 170px;
     border-radius: 10px;
     padding-left: 15px;
-    background-color: var(--input);
     color: #000;
     transition: .3s;
 }
 
-.formClientFormat input:hover {
-    height: 32px;   
-    width: 152px;
+.camp img {
+    position: absolute;
+    top: 8px;
+    left: 160px;
 }
 
-.formClientFormat div {
+
+/* TODO: Estilizanod a tebela */
+.car {
+    background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;
 }
 
-/* TODO: Estilizando a pesquisa por cpf */
-.pesquisa {
-    display: flex;
+.table {
+    border: 1px solid black;
+    text-align: start;
+    font-size: 1.3rem;
+    padding: 1rem ;
     position: relative;
 }
 
-.pesquisa img {
-    width: 20px;
-    height: 20px;
-    color: var(--Cinza);
-    position: absolute;
-    top: 7px;
-    right: 15px;
+table {
+    padding: .5rem;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-.pesquisa input {
-    width: px;
-    margin-bottom: 0;
-    border-radius: 10px;
-}
-
-/* TODO: Estilização do botões */
-.buttons {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.buttons img {
-    height: 10px;
-    width: 10px ;
-}
-
-.buttons button {
-    height: 30px;   
-    width: 95px;
-    cursor: pointer;
-    border-radius: 10px;
-    padding-left: 15px;
-    background-color: var(--CinzaClarinho);
-    color: #000;
-    border: none;
-    transition: .3s;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.esquerda button {
-    width: 85;
-}
-
-.esquerda button img {
-    margin-left: -10px;
-}
-
-.direita {
-        margin: 0;
-}
-
-.direita button{
-    background-color: var(--Botões);
-    margin: 0;
-    margin-right: 1.3rem;
+th, td {
+    border: 1px solid black;
+    padding: 0 .5rem;
 }

@@ -103,6 +103,7 @@ main {
     width: 500px;
     padding: 1rem;
     position: relative;
+    border-radius: .5rem;
 }
 
 .formPet{

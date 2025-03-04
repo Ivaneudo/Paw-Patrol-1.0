@@ -133,6 +133,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    border-radius: .5rem;
 }
 
 .table {

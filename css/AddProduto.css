@@ -84,15 +84,15 @@ body {
     color: var(--LinksHover);
 }
 
+.navbar ul li .products {
+    color: var(--LinksHover);
+}
+
 .navbar ul li{
     margin-right: 5rem;
 }
 
-#cartao {
-    color: var(--LinksHover);
-}
-
-/* TODO: Estilizando o campo do pagamento por dinheiro */
+/* TODO: Estilizando o campo do pagamento via cartão */
 .ContainerCartao {
     background-color: #fff;
     display: flex;
@@ -100,27 +100,6 @@ body {
     justify-self: center;
     padding: 1rem;
     border-radius: .5rem;
-}
-
-.tipo {
-    padding: 1rem;
-}
-
-.NavCard {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    height: 40px;
-    border-bottom: 1px solid black;
-}
-
-.NavCard a {
-    text-decoration: none;
-    color: #6c6b6b;
-}
-
-.NavCard a:hover {
-    color: #000;
 }
 
 /* TODO: Estilzando os input */
@@ -140,21 +119,60 @@ label {
     color: #000;
 }
 
-/* TODO: Estilizando a primeria linha. */
+/* TODO: Estilizando a escolha da bandeira do cartão. */
 .PrimLin {
     display: flex;
     margin-top: .5rem;
     gap: 1rem;
 }
 
-/* TODO: Estilizando o valor que o cliente deve pagar. */
-.quebra {
+.bandeira {
     display: flex;
     flex-direction: column;
 }
 
-/* TODO: Estilizando as vezes que o cliente pode parcelar a compra */
+.bandeira select {
+    border: none;
+    width: 150px;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+}
+
+/* TODO: Estilizando o valor que o cliente deve pagar. */
+.valor {
+    display: flex;
+    flex-direction: column;
+}
+
+.valor input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+/* TODO: Estilizando o tamanho do input de nome*/
 .vezes {
+    display: flex;
+    flex-direction: column;
+}
+
+.vezes input {
+    width: 320px;
+}
+
+/* TODO: Estilizando a legunda linha */
+.SecundLin {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.autorizacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.DigitorCard {
     display: flex;
     flex-direction: column;
 }

@@ -103,6 +103,7 @@ main {
     background-color: #fff;
     width: 450px;
     padding: 1rem;
+    border-radius: .5rem;
 }
 
 table {

@@ -102,6 +102,7 @@ main {
     background-color: white;
     width: 500px;
     position: relative;
+    border-radius: .5rem;
 }
 
 /* TODO: Estilizando a linha do tempo.
