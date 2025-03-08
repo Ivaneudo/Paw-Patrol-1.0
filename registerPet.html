@@ -8,6 +8,8 @@
         <link rel="shortcut icon" href="img/Logo-Pethop-250px .ico" type="image/x-icon">
         <!-- css desta pagina -->
         <link rel="stylesheet" href="css/registerPet.css">
+        <!-- js do cachorro -->
+        <script src="js/cachorro.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -47,11 +49,13 @@
                             <div class="radioDiv">
                                 <input 
                                 type="checkbox" 
-                                class="radio"> 
+                                class="radio"
+                                id="cat"> 
                                 <label for="Gato">Gato</label>
                                 <input 
                                 type="checkbox"
-                                class="radio"> 
+                                class="radio"
+                                id="dog"> 
                                 <label for="Cachorro">Cachorro</label>
                             </div>
                             <div class="formPet">
@@ -78,6 +82,13 @@
                                     <input
                                     type="text"
                                     placeholder="Kg/G">
+                                </div>
+                                <div id="cachorro" class="Cachorro">
+                                    <label
+                                    for="idade">Raça:</label>
+                                    <input
+                                    type="text"
+                                    placeholder="Raça">
                                 </div>
                             </div>
                         </div>

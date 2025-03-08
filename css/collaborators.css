@@ -10,6 +10,10 @@
     --gradiente: linear-gradient(#CFE2F8, #5A799A)
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* TODO: Tamanho da logo */
 .logo img {
     width: 200px;
