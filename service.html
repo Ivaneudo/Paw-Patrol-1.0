@@ -32,10 +32,10 @@
                     <a href="registerClient.html">Cadastrar Cliente</a>
                 </li>
                 <li>
-                    <a href="products.html" class="products">Produtos</a>
+                    <a href="products.html">Produtos</a>
                 </li>
                 <li>
-                    <a href="service.html" >Serviços</a>
+                    <a href="service.html" class="products">Serviços</a>
                 </li>
                 <li>
                     <a href="vendas.html">vendas</a>
@@ -50,7 +50,7 @@
                 <div class="formClient">
                     <form action="">
                         <div class="formClientFormat">
-                            <div>
+                            <div class="pesquisa">
                                 <label
                                 for="cpf">CPF do dono:</label>
                                 <div class="pesquisa">
@@ -59,28 +59,24 @@
                                     placeholder="000.000.000-00" id="cpf" maxlength="14">
                                     <img src="img/lupa.png" alt="">
                                 </div>
-                                <label
-                                for="name">Nome:</label>
-                                <input
-                                type="text"
-                                placeholder="Nome">
-                                <label
-                                for="cor">Cor</label></label>
-                                <input
-                                type="text"
-                                placeholder="Cor do pelo">
                             </div>
-                            <div>
-                                <label
-                                for="idade">Idade:</label>
-                                <input
-                                type="text"
-                                placeholder="Ano/Mês">
-                                <label
-                                for="peso">Peso:</label>
-                                <input
-                                type="text"
-                                placeholder="Kg/G">
+                            <div class="table">
+                                <div class="car">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="name">Skol</td> 
+                                                <td class="tipo">Cachorro</td>
+                                                <td class="excluir"><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="name">Laion</td> 
+                                                <td class="tipo">Gato</td>
+                                                <td class="excluir"><input type="checkbox"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                         <div class="buttons">
@@ -91,10 +87,11 @@
                                 </button>
                             </div>
                             <div class="direita">
-                                <button>Cadastrar</button>
                                 <button>
-                                    Avançar
-                                    <img src="img/seta-direita.png" alt="">
+                                    Banho
+                                </button>
+                                <button>
+                                    Tosa
                                 </button>
                             </div>
                         </div>

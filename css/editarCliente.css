@@ -178,7 +178,7 @@ label {
 }
 
 /* TODO: Estilizando as linha */
-.PrimLin, .SecundLin {
+.PrimLin, .SecundLin, .TercLin {
     gap: 4rem;
 }
 
@@ -195,6 +195,14 @@ label {
 .DigitorCard {
     display: flex;
     flex-direction: column;
+}
+
+.TercLin {
+    margin-top: 1rem;
+}
+
+.TercLin input {
+    width: 150px;
 }
 
 /* TODO: Estilização do botões */
