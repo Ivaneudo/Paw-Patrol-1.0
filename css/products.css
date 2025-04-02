@@ -122,6 +122,15 @@ main {
     justify-content: space-between;
 }
 
+.formClientFormat label {
+    font-size: .8rem;
+    color: var(--Cinza);
+}
+
+.formClientFormat .telefone {
+    margin-top: .3rem;
+}
+
 .formClientFormat input {
     background-color: var(--input);
     border: none;

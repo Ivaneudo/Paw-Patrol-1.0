@@ -201,6 +201,11 @@ th, td {
     position: relative;
 }
 
+.pesquisa .cpf {
+    font-size: .8;
+    color: var(--Cinza);
+}
+
 .pesquisa img {
     width: 20px;
     height: 20px;
